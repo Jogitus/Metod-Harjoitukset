@@ -18,7 +18,9 @@ public class App {
 
         neljMetodi(p1,l1);
           if(viidesMetodi(p1,l1) > 50){
-        System.out.println("Ompa iso huone.");
+        System.out.println("Ompa iso huone."); // Teht 5
+
+    
     } 
 
     } // End of main
@@ -43,5 +45,8 @@ public class App {
     return pintaala;
     }// Teht 5 Metodi
     
+    public static void kuudesMetodi()
+    {
+    }
 }
 
