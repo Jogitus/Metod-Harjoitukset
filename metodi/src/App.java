@@ -9,14 +9,17 @@ public class App {
 
         ekaMetodi();
         tokaMetodi(input);// Teht 3 done
-        int p = 0;
-        int l = 0;
+        int p1 = 0;
+        int l1 = 0;
         System.out.println("Kerro minulle pituus: ");
-        p = Integer.parseInt(in.nextLine());
+        p1 = Integer.parseInt(in.nextLine());
         System.out.println("Kerro minulle leveys: ");
-        l = Integer.parseInt(in.nextLine());
+        l1 = Integer.parseInt(in.nextLine());
 
-        neljMetodi(p,l);
+        neljMetodi(p1,l1);
+          if(viidesMetodi(p1,l1) > 50){
+        System.out.println("Ompa iso huone.");
+    } 
 
     } // End of main
     public static void ekaMetodi() 
@@ -32,5 +35,13 @@ public class App {
     {
         int pintaala = pituus * leveys;
         System.out.println("Pintaala on: " + pintaala);
-    }
+    } // Teht 4 metodi
+
+    public static int viidesMetodi(int pitus, int levys)
+    {
+    int pintaala = pitus * levys;
+    return pintaala;
+    }// Teht 5 Metodi
+    
 }
+
