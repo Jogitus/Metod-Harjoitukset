@@ -1,27 +1,16 @@
 public class App {
     public static void main(String[] args) throws Exception {
 
-    calculate(2, 3, "subtraction");
+    int[] array1 = {1,2,3};
+        System.out.println(calculateSum(array1)); 
     }
-    public static void calculate(int n1, int n2, String s1)
+    public static int calculateSum(int[] numbers)
     {
-        if (s1.equals("sum"))
-        {
-            int vastaus = n1 + n2;
-            System.out.println("The result is " + vastaus + ".");
+        int arvo = 0;
+        for(int i=0;i < numbers.length;i++){
+            arvo = arvo + numbers[i];
         }
-        if (s1.equals("multiplication"))
-        {
-            int vastaus = n1 * n2;
-            System.out.println("The result is " + vastaus + ".");
-        }
-        if (s1.equals("subtraction"))
-        {
-            int vastaus = n1 - n2;
-            System.out.println("The result is " + vastaus + ".");
-        }
-        
-        
+        return arvo;
     }
 
 }
